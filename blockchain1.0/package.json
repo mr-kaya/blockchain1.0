@@ -1,0 +1,12 @@
+{
+  "name": "blockchain1.0",
+  "version": "0.0.0",
+  "description": "blockchain1.0",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
