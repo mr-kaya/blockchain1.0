@@ -62,3 +62,4 @@ console.log('Blockchain verileri dogru mu?' + blockchain.isChainValid()); //Veri
 blockchain.chain[1].data = { amount: 100 }//Eklersen Veriler Deðiþti Olur
 
 console.log('Blockchain verileri dogru mu?' + blockchain.isChainValid()); //Veriler Deðiþtimi
+console.log('Hahaha' + blockchain.isChainValid());
