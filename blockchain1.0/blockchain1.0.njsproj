@@ -29,6 +29,12 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="blockchain.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="keygenerator.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="main.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
