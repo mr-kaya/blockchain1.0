@@ -24,7 +24,7 @@ class Block {
 	}
 
 	mineBlock(difficulty) {
-		while (this.hash.substring(0, difficulty) !== Array(difficulty).join("0")) {
+		while (this.hash.substring(0, difficulty) !== Array(difficulty + 1).join("0")) {
 			this.nonce++;
 			this.hash = this.calculateHash();
 		}
@@ -36,7 +36,7 @@ class Block {
 class Blockchain {
 	constructor() {
 		this.chain = [this.createGenesisBlock()];
-		this.difficulty = 2; //mining bloklarýnýn, hash kodlarýnýn baþýndaki sýfýrlarýn ('0') kaç tane olacaðýný belirler.
+		this.difficulty = 2; //mining bloklarinin, hash kodlarinin basindaki sifirlarin ('0') kac tane olacagini belirler.
 		this.pendingTransactions = [];
 		this.miningReward = 100;
 	}
