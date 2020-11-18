@@ -28,7 +28,7 @@ class Block {
 class Blockchain {
     constructor() {
         this.chain = [this.createGenesisBlock()];
-        this.difficulty = 2; //mining bloklarýnýn, hash kodlarýnýn baþýndaki sýfýrlarýn ('0') kaç tane olacaðýný belirler.
+        this.difficulty = 2; //mining bloklarinin, hash kodlarinin basindaki sifirlarin ('0') kac tane olacagini belirler.
     }
 
     createGenesisBlock() {
