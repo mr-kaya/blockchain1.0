@@ -1,5 +1,6 @@
 const SHA256 = require('crypto-js/sha256');
 // npm install --save crypto-js
+//node blockchain.js
 const EC = require('elliptic').ec;
 const ec = new EC('secp256k1');
 
@@ -51,7 +52,7 @@ class Block {
 	}
 
 	mineBlock(difficulty) {
-		while (this.hash.substring(0, difficulty) !== Array(difficulty).join("0")) {
+		while (this.hash.substring(0, difficulty) !== Array(difficulty + 1).join("0")) {
 			this.nonce++;
 			this.hash = this.calculateHash();
 		}
