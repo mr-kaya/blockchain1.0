@@ -69,3 +69,4 @@ blockchain.addBlock(new Block(1, "10/07/2020", { amount: 4 }));
 
 console.log('mining block 2....');
 blockchain.addBlock(new Block(2, "12/07/2020", { amount: 10 }));
+console.log('mining finish');
